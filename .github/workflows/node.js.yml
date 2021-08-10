@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Installing Packages
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: Checking Formatting
         run: npm run lint && npm run prettier-check
       - name: Code Coverage
