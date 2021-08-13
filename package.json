@@ -1,20 +1,20 @@
 {
-  "name": "courtify-sc",
-  "version": "0.0.1",
-  "description": "Courtify Smart Contract Repository",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Courtify/courtify-sc.git"
-  },
-  "keywords": [
-    "Courtify"
-  ],
-  "author": "Shebin John <admin@remedcu.com>",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/Courtify/courtify-sc/issues"
-  },
-  "homepage": "https://github.com/Courtify/courtify-sc#readme",
+	"name": "courtify-sc",
+	"version": "0.0.1",
+	"description": "Courtify Smart Contract Repository",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Courtify/courtify-sc.git"
+	},
+	"keywords": [
+		"Courtify"
+	],
+	"author": "Shebin John <admin@remedcu.com>",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/Courtify/courtify-sc/issues"
+	},
+	"homepage": "https://github.com/Courtify/courtify-sc#readme",
 	"devDependencies": {
 		"@nomiclabs/hardhat-ethers": "^2.0.1",
 		"@nomiclabs/hardhat-ganache": "^2.0.0",
@@ -36,7 +36,8 @@
 		"ethereumjs-abi": "^0.6.8",
 		"ethers": "^5.0.19",
 		"ganache-core": "^2.10.2",
-		"hardhat": "^2.0.11",
+		"hardhat": "2.5.0",
+		"hardhat-abi-exporter": "^2.2.1",
 		"hardhat-contract-sizer": "^2.0.2",
 		"hardhat-deploy": "^0.7.0-beta.46",
 		"hardhat-docgen": "^1.1.1",
