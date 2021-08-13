@@ -220,6 +220,36 @@
         "constant": true,
         "inputs": [
             {
+                "internalType": "bytes32",
+                "name": "c__0x02ce0d3d",
+                "type": "bytes32"
+            }
+        ],
+        "name": "c_0x02ce0d3d",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "c__0x178016f8",
+                "type": "bytes32"
+            }
+        ],
+        "name": "c_0x178016f8",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
                 "internalType": "uint256",
                 "name": "",
                 "type": "uint256"
