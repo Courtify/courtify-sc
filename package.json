@@ -59,7 +59,7 @@
 		"coverage": "npx hardhat coverage",
 		"doc": "yarn run hardhat docgen",
 		"lint": "npm run lint-sol && npm run lint-js",
-		"lint-sol": "solhint contracts/{*,**/*,**/**/*,**/**/**/*,**/**/**/**/*}.sol",
+		"lint-sol": "solhint contracts/*",
 		"lint-js": "eslint . --ext .js",
 		"prettier": "prettier --write .",
 		"prettier-check": "prettier --check .",
