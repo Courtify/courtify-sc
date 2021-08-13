@@ -21,26 +21,44 @@ contract("CourtifyRights (Creator Functions)", (accounts) => {
 	});
 
 	it("Creator should not be able to create an instance with zero address as chief justice address.", async () => {
-		await expectRevert(CourtifyRights.new(zeroAddress, { from: creator }), "CourtifyRights: Chief Justice Address cannot be a zero Address.");
+		await expectRevert(
+			CourtifyRights.new(zeroAddress, { from: creator }),
+			"CourtifyRights: Chief Justice Address cannot be a zero Address."
+		);
 	});
 
 	it("Creator should not be able to transfer its position to another address.", async () => {
-		await expectRevert(courtifyRights.transferChiefJustice(chiefJustice, { from: creator }), "CourtifyRights: Only Chief Justice can call this function.");
+		await expectRevert(
+			courtifyRights.transferChiefJustice(chiefJustice, { from: creator }),
+			"CourtifyRights: Only Chief Justice can call this function."
+		);
 	});
 
 	it("Creator should not be able to add a court.", async () => {
-		await expectRevert(courtifyRights.addCourt(courtOne, { from: creator }), "CourtifyRights: Only Chief Justice can call this function.");
+		await expectRevert(
+			courtifyRights.addCourt(courtOne, { from: creator }),
+			"CourtifyRights: Only Chief Justice can call this function."
+		);
 	});
 
 	it("Creator should not be able to remove a court.", async () => {
-		await expectRevert(courtifyRights.removeCourt(courtOne, { from: creator }), "CourtifyRights: Only Chief Justice can call this function.");
+		await expectRevert(
+			courtifyRights.removeCourt(courtOne, { from: creator }),
+			"CourtifyRights: Only Chief Justice can call this function."
+		);
 	});
 
 	it("Creator should not be able to add an advocate.", async () => {
-		await expectRevert(courtifyRights.addAdvocate(advocateOne, { from: creator }), "CourtifyRights: Only Court can call this function.");
+		await expectRevert(
+			courtifyRights.addAdvocate(advocateOne, { from: creator }),
+			"CourtifyRights: Only Court can call this function."
+		);
 	});
 
 	it("Creator should not be able to remove an advocate.", async () => {
-		await expectRevert(courtifyRights.removeAdvocate(advocateOne, { from: creator }), "CourtifyRights: Only Court can call this function.");
+		await expectRevert(
+			courtifyRights.removeAdvocate(advocateOne, { from: creator }),
+			"CourtifyRights: Only Court can call this function."
+		);
 	});
 });

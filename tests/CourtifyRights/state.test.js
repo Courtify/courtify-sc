@@ -58,5 +58,4 @@ contract("CourtifyRights (State)", (accounts) => {
 		assert.strictEqual(isAdvocate, false, "Advocate Status is not correct.");
 		assert.strictEqual(advocateLen, 0, "Advocate One is not removed correctly.");
 	});
-
 });

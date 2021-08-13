@@ -49,11 +49,16 @@ contract("CourtifyRights (Chief Justice Functions)", (accounts) => {
 	});
 
 	it("Chief Justice should not be able to call addAdvocate().", async () => {
-		await expectRevert(courtifyRights.addAdvocate(advocateOne, { from: chiefJustice }), "CourtifyRights: Only Court can call this function.");
+		await expectRevert(
+			courtifyRights.addAdvocate(advocateOne, { from: chiefJustice }),
+			"CourtifyRights: Only Court can call this function."
+		);
 	});
 
 	it("Chief Justice should not be able to call removeAdvocate().", async () => {
-		await expectRevert(courtifyRights.removeAdvocate(advocateOne, { from: chiefJustice }), "CourtifyRights: Only Court can call this function.");
+		await expectRevert(
+			courtifyRights.removeAdvocate(advocateOne, { from: chiefJustice }),
+			"CourtifyRights: Only Court can call this function."
+		);
 	});
-
 });

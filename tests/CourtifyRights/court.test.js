@@ -23,15 +23,24 @@ contract("CourtifyRights (Court Functions)", (accounts) => {
 	});
 
 	it("Court should not be able to transfer its position to another address.", async () => {
-		await expectRevert(courtifyRights.transferChiefJustice(chiefJustice, { from: courtOne }), "CourtifyRights: Only Chief Justice can call this function.");
+		await expectRevert(
+			courtifyRights.transferChiefJustice(chiefJustice, { from: courtOne }),
+			"CourtifyRights: Only Chief Justice can call this function."
+		);
 	});
 
 	it("Court should not be able to call addCourt().", async () => {
-		await expectRevert(courtifyRights.addCourt(courtOne, { from: courtOne }), "CourtifyRights: Only Chief Justice can call this function.");
+		await expectRevert(
+			courtifyRights.addCourt(courtOne, { from: courtOne }),
+			"CourtifyRights: Only Chief Justice can call this function."
+		);
 	});
 
 	it("Chief Justice should not be able to call removeCourt() with a normal user address.", async () => {
-		await expectRevert(courtifyRights.removeCourt(courtOne, { from: courtOne }), "CourtifyRights: Only Chief Justice can call this function.");
+		await expectRevert(
+			courtifyRights.removeCourt(courtOne, { from: courtOne }),
+			"CourtifyRights: Only Chief Justice can call this function."
+		);
 	});
 
 	it("Court should be able to call addAdvocate().", async () => {
@@ -53,5 +62,4 @@ contract("CourtifyRights (Court Functions)", (accounts) => {
 	it("Court should not be able to call removeAdvocate() with a normal user address.", async () => {
 		await expectRevert(courtifyRights.removeAdvocate(advocateOne, { from: courtOne }), "CourtifyRights: Address is not an advocate.");
 	});
-
 });

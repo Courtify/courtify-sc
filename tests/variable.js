@@ -2,9 +2,7 @@ const {
 	BN, // Big Number support.
 } = require("@openzeppelin/test-helpers");
 
-const {
-	zeroAddress,
-} = require("./constants");
+const { zeroAddress } = require("./constants");
 
 // Variables
 
