@@ -1,30 +1,30 @@
 {
-    "courtify": "0x3180e17578ECca94976005904574E4Daa79D6935",
-    "chiefJustice": "0x720ea72F9986956ca6cBF1b60d83078D10Fb8116",
-    "court": "",
-    "advocate": "",
-    "cases": [
-        {
-            "DONT_DELETE_THIS": "This acts as the zero index entry in SC which has to be skipped."
-        },
-        {
-            "timestamp": "",
-            "state": "",
-            "district": "",
-            "court": "",
-            "petitonerID": "",
-            "name": "",
-            "caseType": ""
-        },
-        {
-            "timestamp": "",
-            "state": "",
-            "district": "",
-            "court": "",
-            "petitonerID": "",
-            "name": "",
-            "caseType": ""
-        }
-    ],
-    "evidence": ""
+	"courtify": "0x3180e17578ECca94976005904574E4Daa79D6935",
+	"chiefJustice": "0x720ea72F9986956ca6cBF1b60d83078D10Fb8116",
+	"court": "",
+	"advocate": "",
+	"cases": [
+		{
+			"DONT_DELETE_THIS": "This acts as the zero index entry in SC which has to be skipped."
+		},
+		{
+			"timestamp": "",
+			"state": "",
+			"district": "",
+			"court": "",
+			"petitonerID": "",
+			"name": "",
+			"caseType": ""
+		},
+		{
+			"timestamp": "",
+			"state": "",
+			"district": "",
+			"court": "",
+			"petitonerID": "",
+			"name": "",
+			"caseType": ""
+		}
+	],
+	"evidence": ""
 }
