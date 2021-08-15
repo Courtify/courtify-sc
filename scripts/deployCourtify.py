@@ -105,7 +105,7 @@ def deployCourtify():
 
     courtify = acct.deploy(Courtify, chiefJustice)
 
-    print("\Courtify Deployed.")
+    print("\nCourtify Deployed.")
 
     values['courtify'] = str(courtify)
     writeToJSON()
