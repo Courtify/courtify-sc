@@ -178,7 +178,7 @@ contract Courtify is CourtifyRights {
 			string memory _state,
 			string memory _district,
 			string memory _court,
-			string memory name,
+			string memory _name,
 			uint256 _caseType
 		)
 	{
