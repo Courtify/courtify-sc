@@ -22,13 +22,13 @@
 <text text-anchor="start" x="8" y="-405.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;cases: mapping(uint256=&gt;Case)</text>
 <polyline fill="none" stroke="#000000" points="0,-397.5 1000.5472,-397.5 "/>
 <text text-anchor="start" x="8" y="-380.9" font-family="Times,serif" font-size="14.00" fill="#000000">Internal:</text>
-<text text-anchor="start" x="8" y="-364.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_createNewCase(_timestamp: uint256, _state: string, _district: string, _court: string, _petitonerID: uint256, _name: string, _caseType: uint256)</text>
+<text text-anchor="start" x="8" y="-364.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_createNewCase(_timestamp: uint256, _state: string, _district: string, _court: string, _petitonerID: uint256, _name: string, _caseType: uint256): (_newCaseID: uint256)</text>
 <text text-anchor="start" x="8" y="-347.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;_uploadEvidence(_caseID: uint256, _IPFS: string)</text>
 <text text-anchor="start" x="8" y="-330.5" font-family="Times,serif" font-size="14.00" fill="#000000">Public:</text>
 <text text-anchor="start" x="8" y="-313.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; CaseCreated(_initiator: address, _caseID: uint256, _timestamp: uint256, _state: string, _district: string, _court: string, _petitonerID: uint256, _caseType: uint256)</text>
 <text text-anchor="start" x="8" y="-296.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; EvidenceAdded(_initiator: address, _caseID: uint256, _IPFS: string)</text>
 <text text-anchor="start" x="8" y="-280.1" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;constructor(_chiefJustice: address)</text>
-<text text-anchor="start" x="8" y="-263.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;createNewCase(_timestamp: uint256, _state: string, _district: string, _court: string, _petitonerID: uint256, _name: string, _caseType: uint256)</text>
+<text text-anchor="start" x="8" y="-263.3" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;createNewCase(_timestamp: uint256, _state: string, _district: string, _court: string, _petitonerID: uint256, _name: string, _caseType: uint256): (_newCaseID: uint256)</text>
 <text text-anchor="start" x="8" y="-246.5" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;uploadEvidence(_caseID: uint256, _IPFS: string)</text>
 <text text-anchor="start" x="8" y="-229.7" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;getCase(_caseID: uint256): (_timestamp: uint256, _state: string, _district: string, _court: string, name: string, _caseType: uint256)</text>
 <text text-anchor="start" x="8" y="-212.9" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;&#160;getEvidence(_caseID: uint256): string[]</text>
